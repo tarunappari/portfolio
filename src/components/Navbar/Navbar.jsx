@@ -14,8 +14,7 @@ const Navbar = () => {
         initial={{ opacity: 0, scale: 0.3 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-      >
-      </motion.div>
+      ></motion.div>
       <div className="profileLinks">
         <a href="https://github.com/tarunappari" target="_blank">
           <GitHubIcon className="icon" />
@@ -54,7 +53,7 @@ let NavContainer = styled.div`
     .icon:hover {
       cursor: pointer;
       transition: 0.3s ease;
-      color: #3A80E9;
+      color: #3a80e9;
     }
   }
 `;

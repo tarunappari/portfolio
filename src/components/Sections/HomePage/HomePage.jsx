@@ -127,8 +127,9 @@ let HomeContainer = styled.div`
       height: 83vh;
     }
     .img {
-      width: 21rem;
-      height: 83vh;
+      width: 22rem;
+      height: 92vh;
+      margin-top: -2em;
     }
   }
 `;

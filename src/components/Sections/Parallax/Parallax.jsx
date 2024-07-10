@@ -33,9 +33,9 @@ const Parallax = () => {
 export default Parallax;
 
 let ParallaxContainer = styled.div`
-  height: 100%;
+  min-height: 100vh;
   position: relative;
-  width: 100%;
+  min-width: 99vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +71,42 @@ let ParallaxContainer = styled.div`
       width: 100%;
       height: 100%;
       position: absolute;
+    }
+  }
+
+  @media only screen and (max-width: 780px){
+    min-height: 105vh;
+    min-width: 109vw;
+    h1 {
+      font-size: 3.5rem !important;
+    }
+    .mountain{
+      background-size:contain !important;
+      background-repeat: no-repeat;
+    }
+    .planets {
+      background-position: center !important;
+    }
+  }
+
+  @media only screen and (max-width: 560px){
+    min-height: 120vh;
+    min-width: 130vw;
+    margin-top: 9rem ;
+    h1 {
+      font-size: 3rem !important;
+    }
+    .planets {
+      background-position: center !important;
+    }
+  }
+
+  @media only screen and (max-width: 450px){
+    min-height: 130vh;
+    min-width: 155vw;
+    margin-top: 9rem ;
+    h1 {
+      font-size: 2.8rem !important;
     }
   }
 `;

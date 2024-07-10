@@ -137,4 +137,112 @@ let ProjectCoontainer = styled.div`
             }
         }
     }
+
+    @media only screen and (max-width: 950px){
+      margin-top: 3rem;
+      min-width: 110vw;
+      .project{
+        display: flex !important;
+        flex-direction: column;
+        padding-top: 1rem;
+        .projectInfo{
+        transform: none !important;
+        min-width: 90%;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 2rem;
+        gap: 0.5rem !important;
+      }
+      }
+    }
+
+    @media only screen and (max-width: 765px){
+      margin-top: 1rem;
+      min-width: 110vw;
+      .progress{
+        h1{
+          font-size: 2.3rem;
+        }
+        .progressBar{
+                height: 0.3rem !important;
+            }
+      }
+      .projectInfo{
+        gap: 0rem !important;
+                h1{
+                    font-size: 1.7rem !important;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+                button{
+                    padding: 0.2rem 1.1rem !important;
+                    font-size: 0.8rem !important;
+                }
+            }
+            img{
+                width: 20rem !important;
+            }
+    }
+
+    @media only screen and (max-width: 565px){
+      margin-top: 7rem;
+      min-width: 130vw;
+      .progress{
+        h1{
+          font-size: 2.3rem;
+        }
+        .progressBar{
+                height: 0.3rem !important;
+            }
+      }
+      .project{
+        min-height: 120vh !important;
+      }
+      .projectInfo{
+        gap: 0rem !important;
+                h1{
+                    font-size: 1.7rem !important;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+                button{
+                    padding: 0.2rem 1.1rem !important;
+                    font-size: 0.8rem !important;
+                }
+            }
+            img{
+                width: 25rem !important;
+            }
+    }
+
+    @media only screen and (max-width: 450px){
+      margin-top: 10rem;
+      min-width: 150vw;
+      .progress{
+        h1{
+          font-size: 1.9rem;
+        }
+        .progressBar{
+                height: 0.2rem !important;
+            }
+      }
+      .projectInfo{
+                h1{
+                    font-size: 1.5rem !important;
+                }
+                p{
+                    font-size: 0.7rem;
+                }
+                button{
+                    padding: 0.2rem 1.1rem !important;
+                    font-size: 0.8rem !important;
+                }
+            }
+            img{
+                width: 23rem !important;
+            }
+    }
+    
 `;

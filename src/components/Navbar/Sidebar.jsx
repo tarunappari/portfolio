@@ -81,7 +81,19 @@ let SidebarContainer = styled.div`
       cursor: pointer;
       top: 0.88rem;
       left: 1.95rem;
+    }
+  }
 
+  @media only screen and (max-width: 880px){
+    .bg{
+      min-height: 110vh;
+    }
+  }
+
+  @media only screen and (max-width: 580px){
+    .bg{
+      min-height: 150vh;
+      width: 250px !important;
     }
   }
 `;

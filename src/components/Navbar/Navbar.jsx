@@ -43,7 +43,7 @@ let NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0.6rem 6rem;
+  padding: 1rem 3rem;
   .profileLinks {
     display: flex;
     gap: 1rem;
@@ -54,6 +54,20 @@ let NavContainer = styled.div`
       cursor: pointer;
       transition: 0.3s ease;
       color: #3a80e9;
+    }
+  }
+
+  @media only screen and (max-width: 550px){
+    .profileLinks{
+      position: relative;
+      left: 7rem;
+    }
+  }
+
+  @media only screen and (max-width: 450px){
+    .profileLinks{
+      position: relative;
+      left: 15rem;
     }
   }
 `;

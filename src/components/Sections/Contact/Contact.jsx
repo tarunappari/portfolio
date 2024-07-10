@@ -29,16 +29,16 @@ const Contact = () => {
         >
           <motion.div variants={variants} className="myInfo">
             <motion.h1 variants={variants}>Let's Work Together</motion.h1>
-            <motion.div variants={variants}>
-              <h3>Email :</h3>
+            <motion.div className="info" variants={variants}>
+              <h3>Email &nbsp;: &nbsp;&nbsp; </h3>
               <p>tarunappri23@gmail.com</p>
             </motion.div>
-            <motion.div variants={variants}>
-              <h3>Phone :</h3>
+            <motion.div className="info" variants={variants}>
+              <h3>Phone &nbsp; :&nbsp; &nbsp;</h3>
               <p>+917095427959</p>
             </motion.div>
-            <motion.div variants={variants}>
-              <h3>Address :</h3>
+            <motion.div className="info" variants={variants}>
+              <h3>Address &nbsp; : &nbsp;&nbsp;</h3>
               <p>7-102,Devarapalli,Ravulapalem(M),</p>
               <p>East Godavari(D),Andhra Pradesh</p>
               <p>Pin : 533223</p>
@@ -57,8 +57,8 @@ const Contact = () => {
             </form>
           </motion.div>
         </motion.div>
+        <Navbar />      
       </ContactContainer>
-      <Navbar />
     </div>
   );
 };
@@ -115,6 +115,76 @@ let ContactContainer = styled.div`
         background-color: #fca910;
         font-weight: 500;
       }
+    }
+  }
+
+  @media only screen and (max-width: 960px){
+    .container{
+      min-height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: 770px){
+    .container{
+      min-height: 110vh;
+      grid-template-columns: 1fr !important;
+      margin-top: 3rem;
+    }
+    .myInfo {
+      padding-left: 2rem !important;
+      gap: 1rem !important;
+      font-size: 85% !important;
+      margin-top: 1rem;
+      .info{
+        display: flex;
+        align-items: center;
+      }
+      h1 {
+        font-size: 2rem !important;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+      h3 {
+        padding-bottom: 0rem !important;
+      }
+    }
+    .userInfo{
+      margin-top: -1rem;
+    }
+  }
+
+  @media only screen and (max-width: 641px){
+    .container{
+      min-height: 120vh;
+    }
+    .myInfo {
+      padding-left: 4em !important;
+      gap: 0.5rem !important;
+      h1 {
+        font-size: 1.5rem !important;
+      }
+      p {
+        font-size: 0.6rem;
+      }
+    }
+    .userInfo{
+      margin-top: -1rem;
+    }
+  }
+
+  @media only screen and (max-width: 641px){
+    .container{
+      min-height: 120vh;
+      min-width: 130vw;
+    }
+  }
+  
+  @media only screen and (max-width: 450px){
+    .container{
+      min-width: 155vw;
+      min-height: 135vh;
+      border: 2px solid red;
     }
   }
 `;

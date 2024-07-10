@@ -99,4 +99,35 @@ export const GlobalStyles = createGlobalStyle`
     display: none;
   }
 }
+
+@media only screen and (max-width: 800px) {
+      .outlinedBtn{
+        border: 2px solid #3A80E9;
+        padding: 0.5rem 1.3rem;
+        border-radius: 2rem;
+        margin-left: 2rem;
+        font-size: 0.7rem;
+      }
+      .filledBtn{
+        border: 2px solid #3A80E9;
+        padding: 0.5rem 1.3rem;
+        border-radius: 2rem;
+        font-size: 0.7rem;
+      }
+}
+
+@media only screen and (max-width: 550px) {
+      .outlinedBtn{
+        border: 2px solid #3A80E9;
+        padding: 0.4rem 1rem;
+        border-radius: 2rem;
+        margin-left: 2rem;
+        font-size: 0.6rem;
+      }
+      .filledBtn{
+        padding: 0.4rem 1rem;
+        border-radius: 2rem;
+        font-size: 0.6rem;
+      }
+}
 `;
